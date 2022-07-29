@@ -1,3 +1,13 @@
+let bg = document.getElementById("container-bg");
+let bgColorInput = document.querySelector("#bgColorInput");
+
+let bgColorChange = bgColorInput.addEventListener("input", () => {
+  let color = bgColorInput.value;
+  bg.style.setProperty("--bg-color", color);
+  console.log(bg);
+  console.log(color);
+});
+
 const characterAmountRange = document.getElementById("characterAmountRange");
 const characterAmountNumber = document.getElementById("characterAmountNumber");
 
